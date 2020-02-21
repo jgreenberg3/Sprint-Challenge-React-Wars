@@ -6,7 +6,7 @@ import styled from "styled-components";
 const CharacterCard = styled.div`
     background: white;
     color: black;
-    width: 300px; 
+    width: 30%; 
     max-height: 400px; 
     border: 0.5px dotted lightblue;
     margin: 1%;
