@@ -22,16 +22,16 @@ export default function CharacterGrid(){
     }, [effect]);
 
     return(
-        <Container>
+        <div className="container">
             {characters.map(function(object, i){
-             return(
-                <div key={i}>
-                    <Character name={object.name} height={object.height} eye_color={object.eye_color} gender={object.gender} birth_year={object.birth_year}/>
-                    {console.log("Successfully rendered!", object.name)}
-                </div>
-             )
-            }
-        )}
-         </Container>
-    );
+                return(
+                    <div key={i}>
+                        <Character name={object.name} height={object.height} eye_color={object.eye_color} gender={object.gender} birth_year={object.birth_year}/>
+                        {console.log("Successfully rendered!", object.name)}
+                    </div>
+                )
+                }
+            )}
+        </div>
+    )
 };
