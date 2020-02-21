@@ -1,15 +1,19 @@
 .container {
-    background: #e62739;
+    /* background: #e62739; */
     width: 100%;
-    max-width: 850px;
+    max-width: 100%;
+    /* max-width: 850px; */
     margin: 20px auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
     color: white;
     box-shadow: 0px 1px 6px -2px grey;
     opacity: 0.4;
+    object-fit: contain;
   }
 
 *{
