@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Character from "../components/Character";
+import {Container, Row} from "reactstrap";
+import "../components/StarWars.css";
 
 export default function CharacterGrid(){
 
@@ -16,14 +18,20 @@ export default function CharacterGrid(){
         })
         .catch(error => {
             console.log("Error in retrieving data: ", error);
-        })
-    }, [effect])
+        });
+    }, [effect]);
 
     return(
-        <div>
-            {characters.map(object =>{
-             return <Character title={object.title}  />
-            })}
-        </div>
+        <Container>
+            {characters.map(function(object, i){
+             return(
+                <div key={i}>
+                    <Character name={object.name} height={object.height} eye_color={object.eye_color} gender={object.gender} birth_year={object.birth_year}/>
+                    {console.log("Successfully rendered!", object.name)}
+                </div>
+             )
+            }
+        )}
+         </Container>
     );
-}
+};
