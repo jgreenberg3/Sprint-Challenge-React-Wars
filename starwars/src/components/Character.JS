@@ -1,16 +1,14 @@
-import {
-    Jumbotron, Navbar, NavbarBrand, NavbarToggler, Collapse, UncontrolledDropdown, NavbarText,
-    Nav, NavItem, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from "reactstrap";
-  
-    const Character = props =>{
+import React from "react";
+import {Card, CardTitle} from "reactstrap";
 
-        return (
+const Character = props => {
+        return(
+            <div>
+                <Card>
+                    <CardTitle>{props.title}</CardTitle>
+                </Card>>
+            </div>
+        );    
+}
 
-            
-
-
-
-
-
-        )
-    }
+export default Character;
