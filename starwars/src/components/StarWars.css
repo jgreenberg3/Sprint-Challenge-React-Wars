@@ -18,4 +18,5 @@
 
 *{
     border: 0.5px solid blue;
+    box-sizing: border-box;
 }

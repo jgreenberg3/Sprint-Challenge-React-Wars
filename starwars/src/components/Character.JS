@@ -1,15 +1,16 @@
 import React from "react";
 import {Card, CardTitle, Row, Col, CardBody, CardSubtitle, CardText} from "reactstrap";
-import style from "../components/StarWars.css";
+import "../components/StarWars.css";
 import styled from "styled-components";
 
 const CharacterCard = styled.div`
     background: white;
     color: black;
-    width: 30%; 
+    width: 300px; 
     max-height: 400px; 
     border: 0.5px dotted lightblue;
     margin: 1%;
+    opacity: 1;
 `;
 
 const CharacterTitle = styled.div`
@@ -21,7 +22,8 @@ const CharacterSubTitle = styled.div`
 `;
 
 const Character = props => {
-        return(
+    return(
+                
                <CharacterCard>
                    <CharacterTitle>{props.name}</CharacterTitle>
                         <CharacterSubTitle>{props.gender}</CharacterSubTitle>

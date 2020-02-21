@@ -26,7 +26,7 @@ export default function CharacterGrid(){
             {characters.map(function(object, i){
                 return(
                     <div key={i}>
-                        <Character name={object.name} height={object.height} eye_color={object.eye_color} gender={object.gender} birth_year={object.birth_year}/>
+                        <Character key={i} name={object.name} height={object.height} eye_color={object.eye_color} gender={object.gender} birth_year={object.birth_year}/>
                         {console.log("Successfully rendered!", object.name)}
                     </div>
                 )
